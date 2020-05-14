@@ -1,0 +1,21 @@
+<h1>register</h1>
+<%- include ('./partials/messages') %>
+<form action="/users/register" method="POST">
+    <input 
+    type="email" 
+    id="email" 
+    name="email" 
+    placeholder="email"
+    value="<%= typeof email != 'undefined' ? email : '' %>"/> 
+    <br/>
+    <input 
+    type="password" 
+    id="password" 
+    name="password" 
+    placeholder="password"/> 
+    <br/>
+    <button type="submit">register</button>
+    <br/>
+    <a href="/users/login">login</a> <a href="/">home</a>
+</form>
+
